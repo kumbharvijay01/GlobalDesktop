@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="550" leftMargin="25" rightMargin="20" topMargin="40" bottomMargin="20" uuid="fb1987fa-8835-4b3d-9589-cd3f772d1de9">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="96"/>
+	<parameter name="parameter" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[Select * from invoice t where t.invoiceno=$P{parameter}]]>
+	</queryString>
+	<field name="INVOICENO" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="INVOICEDATE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TOO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="USERNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="BOOKEDBY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="VEHICLENO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="VEHICLETYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="STARTDATE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ENDDATE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="STARTTIME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ENDTIME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="STARTKM" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ENDKM" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TOTALKM" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TOTALHRSDAY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESC1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESC2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESC3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESC1RATE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESC2RATE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESC3RATE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESC1AMOUNT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESC2AMOUNT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESC3AMOUNT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TOLLPARKING" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SUBTOTAL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SERVICETAX" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SWATCHBARATTAX" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KRISHITAX" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AMOUNTINWORDS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="GRANDTOTAL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DT_CREATED" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<image>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="351" height="91" uuid="e3436d64-544f-4726-93dc-4e8f63ed2971"/>
+				<imageExpression><![CDATA["F:\\NetBeans\\GlobalDesktop\\Reports\\head.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="280" y="0" width="267" height="91" uuid="ce932fd6-70b9-4d6a-8569-b275f2a5db96"/>
+				<imageExpression><![CDATA["F:\\NetBeans\\GlobalDesktop\\Reports\\head2.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="2" y="3" width="553" height="1" uuid="4db71484-f302-48ee-ac94-d3fa5cfb7f55"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="15" width="132" height="20" uuid="ad121551-accf-4946-b2b2-f4bb0979f2dd"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[PAN  : ATFPK7304R]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="327" y="15" width="215" height="20" uuid="52066add-5451-4bd3-91fc-c3abc320e3d3"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[SERVICE TAX CODE : ATFPK7304RSD001 ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="240" y="0" width="87" height="20" uuid="16598f5f-a61c-49c0-a376-08b3bace8403"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[I  N  V  O  I  C  E]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="24" width="552" height="1" uuid="1126b9f9-c7b6-4884-b5a9-e9cb5b3a6716"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="554" splitType="Stretch">
+			<staticText>
+				<reportElement x="3" y="4" width="19" height="20" uuid="959b5760-0c33-4181-8cb5-ae91117c578e"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[To : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="4" width="100" height="20" uuid="69b6de1d-268f-4c42-8305-efb220cbd13a"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Invoice No: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="24" width="100" height="20" uuid="ebf6903d-76e1-4b96-a1a3-70016df7e68c"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Invoice Date: ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="48" width="552" height="1" uuid="93105cec-b1a3-411f-bd42-a9053605e285"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="4" y="53" width="72" height="15" uuid="bcdbd28b-1cb3-4f2b-9fd3-7206e68c4015"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[User Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="68" width="72" height="15" uuid="93154a7d-4b64-4f46-aa28-b945e370c941"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Vehicle No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="83" width="72" height="15" uuid="21f6e1df-16df-45a4-aedc-6f4e2ce4489b"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Opening Km:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="98" width="72" height="15" uuid="3f65a9a1-3932-4dc4-b58d-6f442de9b96c"/>
+				<text><![CDATA[Close Km:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="53" width="83" height="15" uuid="d2c52712-e331-4bba-b023-9fa8e9e5c7df"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Vehicle Type:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="68" width="83" height="15" uuid="70e89469-93d8-4fc1-b621-de88dd99e788"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Booked By:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="83" width="83" height="15" uuid="1037eb0b-103a-42c6-b811-dbc2a942d3ca"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Start Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="98" width="83" height="15" uuid="b06e0470-1da5-4987-a4e2-fe28bb94ab06"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[End Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="113" width="100" height="15" uuid="3546d020-e4f5-48a5-9a84-e485d2b3b1bd"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Total Hrs./ Days:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="113" width="72" height="15" uuid="ad5fd8d0-30ba-4cf1-997c-f90e43c4dd8f"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Total Km:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="132" width="551" height="1" uuid="b4afadc3-5975-47cb-9e5e-e1775e17f312"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="159" width="551" height="1" uuid="ce204527-e04f-4c04-9711-c3ed89eab45d"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="43" y="139" width="72" height="15" uuid="90900396-76fb-4f69-b567-91e8649b65b6"/>
+				<textElement>
+					<font fontName="Bookman Old Style" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="139" width="72" height="15" uuid="f7afcd93-3262-42b0-aec4-504ab2e48bca"/>
+				<textElement>
+					<font fontName="Bookman Old Style" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="139" width="72" height="15" uuid="85cedf30-5d93-41ae-aa2e-6f9992406938"/>
+				<textElement>
+					<font fontName="Bookman Old Style" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount (INR)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="285" y="135" width="1" height="328" uuid="4fa93c81-9c63-4331-80fa-fa27421aa024"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="399" y="133" width="1" height="330" uuid="6d189476-e1c1-4e67-94a6-cd23024ea57d"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="289" y="301" width="62" height="20" uuid="d2ef9407-0cc6-4475-8c72-9bda94f63ee9"/>
+				<textElement>
+					<font fontName="Bookman Old Style" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sub Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="321" width="149" height="16" uuid="3f93681f-3d63-4e59-b4c1-061f0801074f"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Service Tax  5.60%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="337" width="149" height="16" uuid="2e9b0d80-14c3-4f1a-9f56-504840f5eae6"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Swatchh Bharat Cess 0.20 %]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="353" width="149" height="16" uuid="e1dac2a1-d7de-4d7f-a6bd-4c34516c3598"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Krishi Kalyan Cess 0.20 %]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="393" width="138" height="16" uuid="d4f02b97-0d54-48e3-914f-d97042a1353a"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Toll & Parking Charges]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="412" width="107" height="16" uuid="057259f8-4f16-41bc-bb52-caaf847e5d18"/>
+				<textElement>
+					<font fontName="Bookman Old Style" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Grand Total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="408" width="552" height="1" uuid="f74f1447-09bc-4dc8-82cc-6ad17a643023"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="6" y="463" width="552" height="1" uuid="a0875f26-b3b0-4f0f-88af-ea36ea573d7f"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="16" y="409" width="103" height="16" uuid="982e883d-a58c-4234-846a-8b11f2f09dcc"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Amount In Words.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="471" width="273" height="16" uuid="ef066b5a-7593-4fa2-a3a5-f9a0332273c1"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[SERVICE TAX TO BE PAID BY SERVICE RECIPIENT BY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="487" width="273" height="16" uuid="a77f160a-0ac7-49b5-9173-f7b329e96308"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[VIRTUE OF NOTIFICATION NO. 30/2012 ST. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="503" width="273" height="16" uuid="1fc69e30-8c99-48c0-b728-b9ac3461af59"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[DATED 20-06-2012 Sr. No. 7 (a).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="471" width="158" height="16" uuid="8d6e2664-943e-4203-9dab-2dd2c3ebdd83"/>
+				<textElement>
+					<font fontName="Bookman Old Style" isBold="true"/>
+				</textElement>
+				<text><![CDATA[F o r :  G L O B A L   C A R S]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="538" width="131" height="16" uuid="1b64951f-57d6-4b94-bded-4fa34e1011b9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Authorised Signatory.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="4" width="100" height="20" uuid="5bd5a7e7-5f5b-4506-bb02-7fcfa1e9085a"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{INVOICENO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="4" width="274" height="20" uuid="59f92b0a-79f4-48c7-b587-75c413003423"/>
+				<textElement>
+					<font fontName="Bookman Old Style" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TOO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="55" width="193" height="13" uuid="591fbe02-11dc-4ab0-ab5e-d842d11aa6ff"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{USERNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="54" width="147" height="15" uuid="605b12a6-377b-4775-a0f7-80e594866c05"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VEHICLETYPE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="392" y="69" width="147" height="14" uuid="41c8c903-59b8-4c33-ac9e-bbcd9a0678ef"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BOOKEDBY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="68" width="134" height="15" uuid="91939889-d074-4924-b1d3-3e5be31c9865"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VEHICLENO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="85" width="100" height="13" uuid="11444917-0f37-4edc-a99b-f59f4fe50903"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{STARTKM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="100" width="100" height="13" uuid="635781fb-2e91-4895-a75c-42eb63986128"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ENDKM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="85" y="115" width="100" height="16" uuid="e0e15a2d-d67f-4294-94c2-01551e48dbe9"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TOTALKM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="393" y="115" width="100" height="17" uuid="bcf6c893-ba5b-447c-a3cc-a67e65e953d7"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TOTALHRSDAY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="172" width="269" height="20" uuid="eba89742-c955-44e9-932d-6a3df753c0c0"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESC1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="17" y="197" width="247" height="19" uuid="be2fcb53-d045-45ce-9eea-db761cbcdf14"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESC2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="19" y="222" width="245" height="20" uuid="2af4390e-96e1-42f4-91d8-64d20a96311e"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESC3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="172" width="100" height="20" uuid="c6d3acfb-28be-48a8-a683-364e9db726e3"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESC1RATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="196" width="100" height="20" uuid="05db7579-1df4-40c0-b29c-a1be55524202"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESC2RATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="291" y="224" width="100" height="20" uuid="b6a9165f-8de4-452c-a651-b3ba386d823b"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESC3RATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="172" width="100" height="20" uuid="7ba6c402-e6e4-481b-8fe5-e6f692038e46"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESC1AMOUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="195" width="100" height="21" uuid="a24d981b-21ae-4fce-b297-ff77b5d908c2"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESC2AMOUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="222" width="100" height="20" uuid="50ffc26d-c69b-4767-9bf4-3df8d5599208"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESC3AMOUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="388" width="100" height="20" uuid="08040c3a-0828-46d4-b7a5-05597849f05d"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TOLLPARKING}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="322" width="100" height="15" uuid="abe62bac-72a5-4346-8c81-f2aa1a420ef9"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SERVICETAX}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="337" width="100" height="16" uuid="dd2c7365-947d-45cf-a6c2-822e84ed0af5"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SWATCHBARATTAX}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="353" width="100" height="16" uuid="6aacf01a-6bf2-48bc-8fa6-a4ae5cf5999b"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{KRISHITAX}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="413" width="100" height="15" uuid="c60260fc-6d68-431f-897f-a896578da99b"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GRANDTOTAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="22" y="426" width="253" height="37" uuid="a3251196-8237-463b-a25b-f63180941880"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AMOUNTINWORDS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="301" width="100" height="20" uuid="79f6ec40-8696-4895-984b-e7b24df10732"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SUBTOTAL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="24" width="100" height="20" uuid="10d642ff-bc96-4ad2-a334-08e4a65d4783"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{INVOICEDATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="82" width="79" height="14" uuid="55bc3c85-6442-450c-ac1b-fac7973b4407"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{STARTDATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="392" y="99" width="76" height="14" uuid="cfb64202-8b5a-46e2-92ac-27646c071dbd"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ENDDATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="463" y="82" width="26" height="13" uuid="42c9252e-e514-498f-8a3a-22532afc8491"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="497" y="81" width="50" height="14" uuid="a1baba1f-b7da-4206-b84c-897d28470a20"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{STARTTIME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="496" y="98" width="51" height="14" uuid="087f0331-dff7-40a8-aa86-e1ba51a38fcd"/>
+				<textElement>
+					<font fontName="Bookman Old Style"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ENDTIME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="464" y="98" width="26" height="13" uuid="19aeb9f8-0e18-4f04-80c9-791f79a677b6"/>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
